@@ -1,0 +1,25 @@
+[project]
+name = "fatapi"
+version = "0.1.0"
+description = "a very fat api"
+authors = [
+    {name = "eliran ruben"}
+]
+license = {text = "yes pls"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jwt (>=1.3.1,<2.0.0)",
+    "sqlmodel (>=0.0.24,<0.0.25)",
+    "passlib (>=1.7.4,<2.0.0)",
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "starlette (>=0.46.2,<0.47.0)",
+    "pydantic (>=2.11.4,<3.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "pyjwt (>=2.10.1,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
